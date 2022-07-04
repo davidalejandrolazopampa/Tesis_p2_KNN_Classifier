@@ -5,10 +5,10 @@ import numpy as np
 import threading
 import math
 
-images_path = "./DataSet/70/"
+images_path = "./DataSet/90/"
 images_folder = os.listdir(images_path)
 #print(images_folder)
-csvfile = open("dataset_FC_70.csv", 'w', encoding='UTF8', newline='') 
+csvfile = open("dataset_FC_90.csv", 'w', encoding='UTF8', newline='') 
 
 writer = csv.writer(csvfile)
 header = [i for i in range(1, 129)]
