@@ -5,12 +5,19 @@ import pandas as pd
 import pickle
 import numpy as np
 from rtree import index
-image_path = "./Original/S1_1.jpg" #Cambiar imagen
-rtree_path = "./bin_test/rtree_index_99_90"
-dataset_path = "./data/dataset_PCA_99_90.csv"
-scaler_path = "./bin/scaler_PCA_99_90.dat"
-pca_path = "./bin/pca_PCA_99_90.dat"
-ncomponents_path = "./bin/ncomponents_PCA_99_90.dat"
+#Testing Data
+path_1 = "./DataSet/40/"
+
+
+image_path = path_1 + "S2_10.jpg"
+
+#Traning Data
+rtree_path = "./bin_test/rtree_index_99_60"
+dataset_path = "./data/dataset_PCA_99_60.csv"
+scaler_path = "./bin/scaler_PCA_99_60.dat"
+pca_path = "./bin/pca_PCA_99_60.dat"
+ncomponents_path = "./bin/ncomponents_PCA_99_60.dat"
+
 size = 90 ##cambio
 
 def timeKnrearest(size): #knn_rtree
